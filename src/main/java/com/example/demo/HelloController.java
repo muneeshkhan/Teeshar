@@ -11,10 +11,10 @@ public class HelloController {
     @Autowired
     private UserRepository userRepository;
 
-    // Root -> form.html
+    // Root -> index.html
     @GetMapping("/")
     public String showForm() {
-        return "form";
+        return "index";
     }
 
     // Handle form.html (simple username submit)
